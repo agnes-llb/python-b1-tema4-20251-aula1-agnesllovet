@@ -38,11 +38,23 @@ Exemple:
 
 def descending_list_iterator(numbers_list):
     # Write here your code
+    descending_list=[]
+    for number_to_put in numbers_list:
+        inserted = False
+        for ipos in range (0,len(descending_list)):
+            if (number_to_put) >= descending_list [ipos]:
+                descending_list.insert (ipos, number_to_put)
+                inserted = True
+                break
+        if not inserted:
+                descending_list.append(number_to_put)
+    return descending_list                
     pass
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
 
-# numeros = [2, 3, 6, 9, 11, 12, 15, 18]
-# print(list(descending_list_iterator(numeros)))  
+#numeros = [2, 3, 6, 9, 11, 12, 15, 18]
+#numeros = [5, 1, 8, 3, 2]
+#print(list(descending_list_iterator(numeros)))  

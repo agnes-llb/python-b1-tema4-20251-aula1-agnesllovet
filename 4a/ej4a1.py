@@ -39,6 +39,13 @@ list_2 = [4, 5, 6, 7, 8]
 
 def find_intersection(list_1, list_2):
     # Write here your code
+    # Algoritme per trobar el elements comuns i guardar-ho a una llista de sortida
+    # Recorerem els elements d'una llista i guardarem els que estiguin en la segona
+    list_inter = []
+    for element in list_1:
+        if element in list_2:
+            list_inter.append(element)
+    return list_inter
     pass
 
 
@@ -47,3 +54,4 @@ def find_intersection(list_1, list_2):
 
 # print(find_intersection([1, 2, 3, 4], [3, 4, 5, 6]))
 # print(find_intersection(['apple', 'banana', 'orange'], ['banana', 'kiwi', 'apple']))
+# print (find_intersection([],[1,2]))

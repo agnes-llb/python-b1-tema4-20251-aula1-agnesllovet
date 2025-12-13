@@ -16,3 +16,6 @@ def test_descending_list_iterator():
 
     # Test with a list of negative numbers
     assert list(descending_list_iterator([-5, -1, -8, -3, -2])) == [-1, -2, -3, -5, -8], "descending_list_iterator does not return the correct value for input [-5, -1, -8, -3, -2]. It should be [-1, -2, -3, -5, -8]"
+
+
+test_descending_list_iterator()

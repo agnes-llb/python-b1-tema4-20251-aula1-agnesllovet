@@ -32,3 +32,6 @@ def test_add_elapsed_time():
         "Sofia": 6.5,
         "Alex": 8.7,
     }, "add_elapsed_time does not return the correct value for input {'Juan': 9.5, 'Peter': 14.2, 'Sofia': 6.5, 'Alex': 8.7}, 'Juan', 10.2. It should be {'Juan': 10.2, 'Peter': 14.2, 'Sofia': 6.5, 'Alex': 8.7}"
+
+test_add_elapsed_time()
+

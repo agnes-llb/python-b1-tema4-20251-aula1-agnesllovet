@@ -83,9 +83,16 @@ def create_list(length_list):
     """
 
     # Write here your code
+    list_1_ram = []
+    list_2_heap = []
+    if (length_list < 0 or isinstance(length_list,int) != True):
+           raise ValueError("The number must be positive")
+    list_1_ram = [random.randint(0, 100) for _ in range(0,length_list) ]
+    list_2_heap = copy.deepcopy(list_1_ram)
+    return (list_1_ram,list_2_heap)
     pass
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
-# print(create_list(6))
+# print(create_list(-5))

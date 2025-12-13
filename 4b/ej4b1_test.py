@@ -13,3 +13,8 @@ def test_squared_sum_heap():
     numbers_list = [6, 4, 7]
     expected_result = 101
     assert squared_sum_heap(numbers_list) == expected_result, "squared_sum_heap does not return the correct value for input [6, 4, 7]. It should be 101"
+
+
+#test_squared_sum_heap()
+#test_squared_sum_ram ()
+

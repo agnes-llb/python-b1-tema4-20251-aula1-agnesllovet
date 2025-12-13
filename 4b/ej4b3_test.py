@@ -73,3 +73,11 @@ def test_create_list_with_negative_length():
     # WHEN / THEN
     with pytest.raises(ValueError):
         create_list(length_list)
+
+
+#test_create_list_heap_list_is_a_copy_of_ram_list()
+#test_create_list_lists_have_same_length()
+#test_create_list_ram_list_contains_random_integers()
+#test_create_list_returns_tuple_of_two_lists()
+#test_create_list_with_negative_length()
+#test_create_list_with_zero_length()

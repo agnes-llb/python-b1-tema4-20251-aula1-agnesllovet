@@ -16,3 +16,7 @@ def test_describe_student():
     assert s.describe() == "Mary is 22 years old. Studies Computer Science.", "describe does not return the correct value for input Student('Mary', 22, 'Computer Science'). It should be 'Mary is 22 years old. Studies Computer Science.'"
     assert s.major == "Computer Science", "major does not return the correct value for input Student('Mary', 22, 'Computer Science'). It should be 'Computer Science'"
     assert isinstance(s, Person), "Student is not a subclass of Person"
+
+
+test_describe_person()
+test_describe_student()

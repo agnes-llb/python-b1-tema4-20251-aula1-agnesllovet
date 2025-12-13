@@ -23,3 +23,14 @@ class TestVehicles:
     def test_drive_bicycle_instance_of_vehicles_class(self):
         bicycle = Bicycle()
         assert isinstance(bicycle, Vehicles), "Bicycle should be an instance of Vehicles"
+
+#test_vehicle = TestVehicles ()
+#test_vehicle.test_drive_car()
+#test_vehicle.test_drive_bicycle()
+#test_vehicle.test_drive_vehicles_abstract_method()
+#test_vehicle.test_drive_car_instance_of_vehicles_class()
+#test_vehicle.test_drive_bicycle_instance_of_vehicles_class()
+
+
+
+

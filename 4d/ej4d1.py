@@ -36,6 +36,13 @@ Exemple:
 
 def sum():
     # Write here your code
+    num1= input("Insert the first number: ")
+    num2= input("Insert the second number: ")
+    if (num1.isdigit() == True) and (num2.isdigit() == True):
+        print (f"Result:  {int(num1)+int(num2)}") 
+    else:
+        print ("No has entrat numeros enters")           
+    return int(num1)+int(num2)
     pass
 
 

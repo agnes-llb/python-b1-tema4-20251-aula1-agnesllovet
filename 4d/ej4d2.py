@@ -38,10 +38,24 @@ Exemple:
 """
 def create_read_file():
     # Write here your code
+    # Creem un fitxer que escrigui les tres lineas demanades
+    nom_fitxer = "text_file.txt"
+    list_file = ["Agnes", "Llovet","51"]
+    with open (nom_fitxer,'w') as f_write:
+         for line in list_file:
+             f_write.write (line + "\n")
+         f_write.close()
+    # Un cop creat, l'obrim i llegim
+    with open(nom_fitxer,'r') as f_read:
+         list_read=f_read.readlines()
+         f_read.close()
+    for line in list_read:
+         #print (line, end="")
+         print (line.strip())
     pass
 
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
-# create_read_file()
+create_read_file()

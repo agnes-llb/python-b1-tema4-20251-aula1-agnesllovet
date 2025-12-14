@@ -53,9 +53,23 @@ Exemple:
 
 def read_and_write():
     # Write here your code
+    
+    with open ("file.txt",'w+') as file:
+        name = input ('Insert your name: ').strip()
+        age = input ('Insert your age: ').strip()
+        if not name.isalpha() or not age.isdigit():
+            raise TypeError ("Els valors entrats no son els correctes")
+        file.write (name + "\n") 
+        file.write (age + "\n")
+
+        file.seek(0)
+        #list_read=file.readlines ()
+        for line in file:
+            print (line)
+
     pass
 
 
-# Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
+# Si quieres probar tuA código, descomenta las siguientes líneas y ejecuta el script
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
 # read_and_write()
